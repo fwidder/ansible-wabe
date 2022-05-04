@@ -6,5 +6,7 @@
   tasks:
   - name: Hello Variable
     debug:
-      msg: "{{ mein_cooler_text }}"
-     
+      msg: "Hallo {{ item }}!"
+    loop:
+    - Peter
+    - Uschi
