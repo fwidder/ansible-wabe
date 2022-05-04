@@ -9,3 +9,7 @@
     debug:
       msg: "Hello World!" 
       
+  - name: Erstelle eine Datei
+    file:
+      path: /tmp/super_wichtige_devk_datei
+      state: touch
