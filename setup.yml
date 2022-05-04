@@ -4,22 +4,7 @@
   remote_user: root
 
   tasks:
-
-  - name: Hello Server
+  - name: Hello Variable
     debug:
-      msg: "Hello World!" 
-        
-  - name: Erstelle eine Datei
-    file:
-      path: /tmp/super_wichtige_devk_datei
-      state: touch
-      
-  - name: Erstelle einen Ordner
-    file:
-      path: /tmp/super_wichtige_devk_ordner
-      state: directory    
-      
-  - name: Erstelle einen Ordner
-    file:
-      path: /tmp/super_wichtige_devk_ordner
-      state: directory
+      msg: "{{ mein_cooler_text }}"
+     
